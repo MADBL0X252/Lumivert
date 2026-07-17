@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --accent: #fb7185;
+  --accent-glow: rgba(251, 113, 133, 0.3);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #64748b;
+  --surface: rgba(30, 41, 59, 0.5);
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --radius-xs: 0.75rem;
+}
+
+/* ══════════════════════════════════════════
+   PATCH: Credits panel
+   ══════════════════════════════════════════ */
+
+.credits-panel {
+  text-align: center;
+  padding: 8px 0 16px;
+}
+
+.credits-logo {
+  font-size: 40px;
+  color: var(--accent);
+  filter: drop-shadow(0 0 16px var(--accent-glow));
+  margin-bottom: 10px;
+}
+
+.credits-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.credits-subtitle {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-bottom: 20px;
+}
+
+.credits-divider {
+  height: 1px;
+  background: var(--surface-border);
+  margin: 16px 0;
+}
+
+.credits-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 16px;
+  border-radius: var(--radius-xs);
+  margin-bottom: 4px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+}
+
+.credits-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.credits-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+.credits-value {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.credits-footer {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+  margin-top: 4px;
+}

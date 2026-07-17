@@ -1,0 +1,8 @@
+{
+  "name": "Lumivert",
+  "description": "Local, batch file extension converter using File System Access API. Supports drag-and-drop and runs entirely client-side.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "N/A"
+  ]
+}
